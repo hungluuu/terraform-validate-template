@@ -114,7 +114,7 @@ resource "aws_codebuild_project" "checkov" {
 
   source {
     type      = "CODEPIPELINE"
-    buildspec = "./files/buildspec-checkov.yml"
+    buildspec = "./src/buildspec-checkov.yml"
   }
 }
 
@@ -136,7 +136,7 @@ resource "aws_codebuild_project" "opa" {
 
   source {
     type      = "CODEPIPELINE"
-    buildspec = "./files/buildspec-opa.yml"
+    buildspec = "./src/buildspec-opa.yml"
   }
 }
 
@@ -158,7 +158,7 @@ resource "aws_codebuild_project" "terrascan" {
 
   source {
     type      = "CODEPIPELINE"
-    buildspec = "./files/buildspec-terrascan.yml"
+    buildspec = "./src/buildspec-terrascan.yml"
   }
 }
 
@@ -180,7 +180,7 @@ resource "aws_codebuild_project" "terratest" {
 
   source {
     type      = "CODEPIPELINE"
-    buildspec = "./files/buildspec-terratest.yml"
+    buildspec = "./src/buildspec-terratest.yml"
   }
 }
 
@@ -207,7 +207,7 @@ resource "aws_codebuild_project" "infracost" {
 
   source {
     type      = "CODEPIPELINE"
-    buildspec = "./files/buildspec-infracost.yml"
+    buildspec = "./src/buildspec-infracost.yml"
   }
 }
 
@@ -229,6 +229,6 @@ resource "aws_codebuild_project" "tf_apply" {
 
   source {
     type      = "CODEPIPELINE"
-    buildspec = "./files/buildspec.yml"
+    buildspec = "./src/buildspec.yml"
   }
 }
