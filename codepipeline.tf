@@ -215,7 +215,7 @@ resource "aws_codepipeline" "demo" {
 
     action {
       run_order = 1
-      name      = "DevOps-Approval"
+      name      = "Code-Review-Approval"
       category  = "Approval"
       owner     = "AWS"
       provider  = "Manual"
