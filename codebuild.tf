@@ -92,7 +92,7 @@ resource "aws_codebuild_project" "tflint" {
 
   source {
     type      = "CODEPIPELINE"
-    buildspec = "./files/buildspec-tflint.yml"
+    buildspec = "./src/buildspec-tflint.yml"
   }
 }
 
@@ -207,7 +207,7 @@ resource "aws_codebuild_project" "infracost" {
 
   source {
     type      = "CODEPIPELINE"
-    buildspec = "./src/buildspec-infracost.yml"
+    buildspec = "./files/buildspec-infracost.yml"
   }
 }
 
@@ -229,6 +229,6 @@ resource "aws_codebuild_project" "tf_apply" {
 
   source {
     type      = "CODEPIPELINE"
-    buildspec = "./src/buildspec.yml"
+    buildspec = "./files/buildspec.yml"
   }
 }
