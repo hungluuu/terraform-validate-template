@@ -92,7 +92,7 @@ resource "aws_codebuild_project" "tflint" {
 
   source {
     type      = "CODEPIPELINE"
-    buildspec = "./src/buildspec-tflint.yml"
+    buildspec = "./files/buildspec-tflint.yml"
   }
 }
 
@@ -114,7 +114,7 @@ resource "aws_codebuild_project" "checkov" {
 
   source {
     type      = "CODEPIPELINE"
-    buildspec = "./src/buildspec-checkov.yml"
+    buildspec = "./files/buildspec-checkov.yml"
   }
 }
 
@@ -136,7 +136,7 @@ resource "aws_codebuild_project" "opa" {
 
   source {
     type      = "CODEPIPELINE"
-    buildspec = "./src/buildspec-opa.yml"
+    buildspec = "./files/buildspec-opa.yml"
   }
 }
 
@@ -158,7 +158,7 @@ resource "aws_codebuild_project" "terrascan" {
 
   source {
     type      = "CODEPIPELINE"
-    buildspec = "./src/buildspec-terrascan.yml"
+    buildspec = "./files/buildspec-terrascan.yml"
   }
 }
 
