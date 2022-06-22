@@ -1,0 +1,3 @@
+[submodule "terraform-bootstrap"]
+	path = terraform-bootstrap
+	url = git@github.com:Nets-Platform-Enablement/terraform-bootstrap.git
